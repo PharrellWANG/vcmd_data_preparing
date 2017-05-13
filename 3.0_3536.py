@@ -1,24 +1,22 @@
 import csv
 
-input_files = [
-    '/Users/Pharrell_WANG/PycharmProjects/proj_vcmd/raw_data_no_duplication_now/training_data_16_kendo.csv',
-    '/Users/Pharrell_WANG/PycharmProjects/proj_vcmd/raw_data_no_duplication_now/training_data_16_balloon.csv',
-    '/Users/Pharrell_WANG/PycharmProjects/proj_vcmd/raw_data_no_duplication_now/training_data_16_gt_fly.csv',
-    '/Users/Pharrell_WANG/PycharmProjects/proj_vcmd/raw_data_no_duplication_now/training_data_16_newspaper.csv',
-    '/Users/Pharrell_WANG/PycharmProjects/proj_vcmd/raw_data_no_duplication_now/training_data_16_poznan_hall2.csv',
-    '/Users/Pharrell_WANG/PycharmProjects/proj_vcmd/raw_data_no_duplication_now/training_data_16_poznan_street.csv',
-    '/Users/Pharrell_WANG/PycharmProjects/proj_vcmd/raw_data_no_duplication_now/training_data_16_shark.csv',
-    '/Users/Pharrell_WANG/PycharmProjects/proj_vcmd/raw_data_no_duplication_now/training_data_16_undo_dancer.csv']
+input_files = ['/Users/Pharrell_WANG/PycharmProjects/vcmd_data_prepare/3_no_duplicated_lines_32x32/no_dup_all_data_32_balloon.csv',
+                '/Users/Pharrell_WANG/PycharmProjects/vcmd_data_prepare/3_no_duplicated_lines_32x32/no_dup_all_data_32_gt_fly.csv',
+                '/Users/Pharrell_WANG/PycharmProjects/vcmd_data_prepare/3_no_duplicated_lines_32x32/no_dup_all_data_32_kendo.csv',
+                '/Users/Pharrell_WANG/PycharmProjects/vcmd_data_prepare/3_no_duplicated_lines_32x32/no_dup_all_data_32_newspaper.csv',
+                '/Users/Pharrell_WANG/PycharmProjects/vcmd_data_prepare/3_no_duplicated_lines_32x32/no_dup_all_data_32_poznan_hall2.csv',
+                '/Users/Pharrell_WANG/PycharmProjects/vcmd_data_prepare/3_no_duplicated_lines_32x32/no_dup_all_data_32_poznan_street.csv',
+                '/Users/Pharrell_WANG/PycharmProjects/vcmd_data_prepare/3_no_duplicated_lines_32x32/no_dup_all_data_32_shark.csv',
+                '/Users/Pharrell_WANG/PycharmProjects/vcmd_data_prepare/3_no_duplicated_lines_32x32/no_dup_all_data_32_undo_dancer.csv']
 
-output_files = [
-    '/Users/Pharrell_WANG/PycharmProjects/proj_vcmd/raw_data_3536/training_data_16_kendo.csv',
-    '/Users/Pharrell_WANG/PycharmProjects/proj_vcmd/raw_data_3536/training_data_16_balloon.csv',
-    '/Users/Pharrell_WANG/PycharmProjects/proj_vcmd/raw_data_3536/training_data_16_gt_fly.csv',
-    '/Users/Pharrell_WANG/PycharmProjects/proj_vcmd/raw_data_3536/training_data_16_newspaper.csv',
-    '/Users/Pharrell_WANG/PycharmProjects/proj_vcmd/raw_data_3536/training_data_16_poznan_hall2.csv',
-    '/Users/Pharrell_WANG/PycharmProjects/proj_vcmd/raw_data_3536/training_data_16_poznan_street.csv',
-    '/Users/Pharrell_WANG/PycharmProjects/proj_vcmd/raw_data_3536/training_data_16_shark.csv',
-    '/Users/Pharrell_WANG/PycharmProjects/proj_vcmd/raw_data_3536/training_data_16_undo_dancer.csv']
+output_files = ['/Users/Pharrell_WANG/PycharmProjects/vcmd_data_prepare/4_3738_to_3536_32x32/3536_all_data_32_balloon.csv',
+                '/Users/Pharrell_WANG/PycharmProjects/vcmd_data_prepare/4_3738_to_3536_32x32/3536_all_data_32_gt_fly.csv',
+                '/Users/Pharrell_WANG/PycharmProjects/vcmd_data_prepare/4_3738_to_3536_32x32/3536_all_data_32_kendo.csv',
+                '/Users/Pharrell_WANG/PycharmProjects/vcmd_data_prepare/4_3738_to_3536_32x32/3536_all_data_32_newspaper.csv',
+                '/Users/Pharrell_WANG/PycharmProjects/vcmd_data_prepare/4_3738_to_3536_32x32/3536_all_data_32_poznan_hall2.csv',
+                '/Users/Pharrell_WANG/PycharmProjects/vcmd_data_prepare/4_3738_to_3536_32x32/3536_all_data_32_poznan_street.csv',
+                '/Users/Pharrell_WANG/PycharmProjects/vcmd_data_prepare/4_3738_to_3536_32x32/3536_all_data_32_shark.csv',
+                '/Users/Pharrell_WANG/PycharmProjects/vcmd_data_prepare/4_3738_to_3536_32x32/3536_all_data_32_undo_dancer.csv']
 
 for file_index in range(len(input_files)):
     r = csv.reader(open(input_files[file_index]))  # Here your csv file
