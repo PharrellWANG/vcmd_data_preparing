@@ -13,4 +13,5 @@ order for program execution:
     2. duplication remover
     3. 37 and 38 change to 35 and 36
     4. merge all to one csv
+    4.1 run 4.1_mode_counter to get the number of each mode, then midify the number in 5.1_equal_training_data_generator.py
     5. generate training data and different testing data
