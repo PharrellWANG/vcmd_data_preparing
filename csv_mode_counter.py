@@ -2,6 +2,7 @@ from collections import OrderedDict
 
 
 def csv_mode_preprocessing(OUTPUT_FILE):
+    print(str(OUTPUT_FILE))
     x = OrderedDict()
 
     mode_0 = 0

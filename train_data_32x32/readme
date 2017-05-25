@@ -1,0 +1,14 @@
+training_32x32.csv:
+    this is the csv file which contains all the training data fro 32x32 block size
+
+training_32x32_equal.csv:
+    this is a subset which has equal samples for each class from 'training_32x32.csv'.
+
+training_32x32_depth_only.csv:
+    this is a subset which only contains depth blocks from 'training_32x32.csv'.
+
+training_32x32_texture_only.csv:
+    this is a subset which only contains texture blocks from 'training_32x32.csv'.
+
+
+
